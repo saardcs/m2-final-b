@@ -189,7 +189,7 @@
           "type": "mcq",
           "id": "q15",
           "text": "15. The highlighted part of the graph is called:",
-          "image": "images/graph1.png",
+          "image": "images/graph2.png",
           "options": [
             "Node",
             "Edge",
@@ -202,7 +202,7 @@
           "type": "mcq",
           "id": "q16",
           "text": "16. The highlighted part of the graph is called:",
-          "image": "images/graph2.png",
+          "image": "images/graph1.png",
           "options": [
             "Node",
             "Edge",
