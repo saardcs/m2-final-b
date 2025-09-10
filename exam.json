@@ -160,7 +160,7 @@
           "id": "q12",
           "num1": 20,
           "num2": 30,
-          "text": "12. Use the factorization method to find the GCF of **30** and **40**.",
+          "text": "12. Use the factorization method to find the GCF of **20** and **30**.",
           "max_points": 1
         },
         {
@@ -168,7 +168,7 @@
           "id": "q13",
           "num1": 13,
           "num2": 26,
-          "text": "13. Use the subtraction method to find the GCF of **11** and **22**.",
+          "text": "13. Use the subtraction method to find the GCF of **13** and **26**.",
           "max_points": 1
         },
         {
@@ -176,7 +176,7 @@
           "id": "q14",
           "num1": 81,
           "num2": 54,
-          "text": "14. Use the division method to find the GCF of **77** and **49**.",
+          "text": "14. Use the division method to find the GCF of **81** and **54**.",
           "max_points": 1
         }
       ]
