@@ -85,7 +85,7 @@
         {
           "type": "mcq",
           "id": "q7",
-          "text": "7. How many different four-block towers can you make, if there is a restriction that the red block and the blue block cannot be at the top?",
+          "text": "7. How many different four-block towers can you make, if there is a restriction that the red block and the green block cannot be at the top?",
           "options": [
             "2",
             "4",
