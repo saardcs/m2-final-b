@@ -158,8 +158,8 @@
         {
           "type": "gcf_factorization",
           "id": "q12",
-          "num1": 30,
-          "num2": 40,
+          "num1": 20,
+          "num2": 30,
           "text": "12. Use the factorization method to find the GCF of **30** and **40**.",
           "max_points": 1
         },
@@ -174,8 +174,8 @@
         {
           "type": "gcf_division",
           "id": "q14",
-          "num1": 77,
-          "num2": 49,
+          "num1": 81,
+          "num2": 54,
           "text": "14. Use the division method to find the GCF of **77** and **49**.",
           "max_points": 1
         }
