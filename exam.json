@@ -166,8 +166,8 @@
         {
           "type": "gcf_subtraction",
           "id": "q13",
-          "num1": 11,
-          "num2": 22,
+          "num1": 13,
+          "num2": 26,
           "text": "13. Use the subtraction method to find the GCF of **11** and **22**.",
           "max_points": 1
         },
