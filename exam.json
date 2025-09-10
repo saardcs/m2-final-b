@@ -9,7 +9,7 @@
           "type": "mcq",
           "id": "q1",
           "text": "1. The highlighted portion of the sudoku puzzle below is called",
-          "image": "images/sudoku1.png",
+          "image": "images/sudoku3.png",
           "options": [
             "Column",
             "Row",
@@ -35,7 +35,7 @@
           "type": "mcq",
           "id": "q3",
           "text": "3. The highlighted portion of the sudoku puzzle below is called",
-          "image": "images/sudoku3.png",
+          "image": "images/sudoku1.png",
           "options": [
             "Column",
             "Row",
