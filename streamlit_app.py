@@ -157,6 +157,7 @@ def render_mcq(item):
         f"**{question_text}**",
         options=options,
         key=item["id"],
+        horizontal=True,
         label_visibility="collapsed"
     )
 
@@ -191,7 +192,7 @@ def render_drawing(item):
 
 def render_short_answer(item):
     st.write(item["text"])
-    st.text_input("Nodes (separated by commas):", key = item["id"])
+    st.text_input(item["label"], key = item["id"])
 
 def render_graph_visualization(item):
     st.write(item["text"])
@@ -553,7 +554,7 @@ def grade_exam():
 
                 section_score += score
 
-            elif item_type == "short_answer" and item_id == "q19":
+            elif item_type == "short_answer" and item_id == "q16":
                 user_nodes = st.session_state.get(item_id, "")
                 expected_nodes = st.secrets["answers"][item_id]
                 score = grade_node_list(user_nodes, expected_nodes, max_points)
@@ -565,7 +566,7 @@ def grade_exam():
                 }
                 section_score += score
 
-            elif item_type == "graph_visualization" and item_id == "q20":
+            elif item_type == "graph_visualization" and item_id == "q17":
                 edges = [st.session_state.get(f"edge_{i}", "") for i in range(7)]
                 expected_edges = [
                     ["Fah", "Beam"],
@@ -585,8 +586,22 @@ def grade_exam():
                 }
                 section_score += score
 
+            elif item_type == "short_answer" and item_id == "q20":
+                user_answer = st.session_state.get(item_id, "").strip()
+                correct_answer = st.secrets["answers"][item_id]
 
+                try:
+                    score = max_points if float(user_answer) == float(correct_answer) else 0
+                except:
+                    score = 0
 
+                submission["answers"][section_name][item_id] = {
+                    "answer": user_answer,
+                    "score": score,
+                    "type": item_type
+                }
+
+                section_score += score
         
         submission["scores"][section_name] = section_score
         total_score += section_score
